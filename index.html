@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор мечты</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="blockOne">
+  <h1 style="text-align:center">Калькулятор мечты</h1>
+  <p>С помощью этого простого приложения вы узнаете, сколько времени займет процесс накопление денег для Вашей мечты.</p>
+  <button id="btnOne" class="center-block" type="button" name="go">Поехали!</button>
+  <hr>
+ </div>
+ 
+<div id="blockTwo">
+  <h3>О чем Вы мечтаете?</h3>
+  <p>Наверняка есть что-то, что Вы хотели бы купить, но у Вас нет на это достаточно денег. Самое время составить план и начать откладывать по-немногу.</p>
+
+    <div class="input-group">
+      <input id="inputTwo" type="text" class="form-control" placeholder="Моя мечта это - ">
+      <span class="input-group-btn">
+        <button id="btnTwo" class="btn btn-secondary" type="button">Дальше</button>
+      </span>
+    </div>
+<hr>
+</div>
+
+<div id="blockThree">
+<h3>Сколько стоит Ваша мечта?</h3>
+<p><span id="blockThreeDream"></span> - это достойный выбор! Но Вам нужно набраться терпения. Ведь для того, чтобы накопить достаточно денег, вероятно, понадобится не мало времени.</p>
+
+  <div class="input-group">
+    <input id="inputThree" type="number" class="form-control" placeholder="$">
+    <span class="input-group-btn">
+      <button id="btnThree" class="btn btn-secondary" type="button">Дальше</button>
+    </span>
+  </div>
+<hr>
+</div>
+
+<div id="blockFour">
+<h3>Сколько денег у Вас уже есть?</h3>
+<p>Возможно, Вы были благоразумны, не разменивались по мелочам, и уже скопили какую-то сумму.</p>
+  <div class="input-group">
+    <input id="inputFour" type="number" class="form-control" placeholder="$">
+    <span class="input-group-btn">
+      <button id="btnFour" class="btn btn-secondary" type="button">Дальше</button>
+    </span>
+  </div>
+<hr>
+</div>
+
+<div id="blockFive">
+<h3>Какую сумму Вы можете позволить себе откладывать ежемесячно?</h3>
+<p>Надеемся, что Вы неуклонно будете следовать плану и совсем скоро будете иметь то, о чем так давно мечтали.</p>
+
+  <div class="input-group">
+    <input id="inputFive" type="number" class="form-control" placeholder="$">
+    <span class="input-group-btn">
+      <button id="btnFive" class="btn btn-secondary" type="button">Узнать результат</button>
+    </span>
+  </div>
+<hr>
+</div>
+
+<div id="result">
+  <h2>Все просто!</h2>
+  <p>Ваша мечта - <span id="dream"></span>, - будет Вашей через <span id="monthMount"></span> месяцев/месяца.</p>
+  <p>Желаем успехов!</p>
+  
+  <button id="otherDream" class="center-block" type="button" name="go">Начать сначала?</button>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
